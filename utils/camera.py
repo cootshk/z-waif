@@ -29,7 +29,7 @@ if utils.settings.vision_enabled:
 root = tkinter.Tk()
 root.withdraw() #use to hide tkinter window
 
-img_scale = float(os.environ.get("IMG_SCALE"))
+img_scale = float(os.environ.get("IMG_SCALE", "1.0"))
 
 
 def capture_pic():
